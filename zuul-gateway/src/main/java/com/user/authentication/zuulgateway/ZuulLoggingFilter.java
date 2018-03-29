@@ -12,15 +12,15 @@ import com.netflix.zuul.exception.ZuulException;
 
 @Component
 public class ZuulLoggingFilter extends ZuulFilter{
+	private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-	private static Logger log = LoggerFactory.getLogger(ZuulLoggingFilter.class);
 	 
 	@Override
 	public Object run() throws ZuulException {
 		  RequestContext ctx = RequestContext.getCurrentContext();
 		    HttpServletRequest request = ctx.getRequest();
 
-		    log.info(String.format("%s request to %s", request.getMethod(), request.getRequestURL().toString()));		
+		    logger.info(String.format("%s request to %s", request.getMethod(), request.getRequestURL().toString()));		
 		return null;
 	}
 
