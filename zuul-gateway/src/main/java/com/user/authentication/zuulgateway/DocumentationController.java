@@ -22,7 +22,8 @@ public class DocumentationController  implements SwaggerResourcesProvider  {
         resources.add(swaggerResource("demo-hi-service", "/demo-hi-service/v2/api-docs", "2.0"));
         resources.add(swaggerResource("demo-hello-service", "/demo-hello-service/v2/api-docs", "2.0"));
         resources.add(swaggerResource("demo-bye-service", "/demo-bye-service/v2/api-docs", "2.0"));
-
+        resources.add(swaggerResource("service-using-rabbit-zipkin", "/service-using-rabbit-zipkin/v2/api-docs", "2.0"));
+        
         return resources;
     }
     

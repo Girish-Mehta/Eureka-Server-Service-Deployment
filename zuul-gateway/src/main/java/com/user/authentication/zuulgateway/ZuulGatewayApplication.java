@@ -51,7 +51,7 @@ public class ZuulGatewayApplication {
                .select()
                .apis(RequestHandlerSelectors.basePackage("com.user.authentication.zuulgateway"))
                .paths(PathSelectors.any())                          
-               .build().apiInfo(new ApiInfo("Product Service Api Documentation", "Documentation automatically generated", model.getParent().getVersion(), null, new Contact("vishruty mittal", null, "vishruty@gmail.com"), null, null));
+               .build().apiInfo(new ApiInfo("Product Service Api Documentation", "Documentation automatically generated", model.getParent().getVersion(), null, new Contact("CTD", null, "CTD@sapient.com"), null, null));
         
         //return new Docket(DocumentationType.SWAGGER_2);
     }
