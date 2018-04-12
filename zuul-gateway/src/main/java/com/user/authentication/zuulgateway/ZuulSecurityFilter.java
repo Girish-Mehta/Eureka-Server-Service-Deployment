@@ -10,14 +10,6 @@ public class ZuulSecurityFilter extends ZuulFilter{
 
 	@Override
 	public Object run() throws ZuulException {
-		RequestContext ctx = RequestContext.getCurrentContext();
-		HttpServletRequest request = ctx.getRequest();
-		
-		// if request is to public service
-		String[] urlParts = request.getServletPath().split("/");
-		String serviceUrl = urlParts[1];
-
-		
 		return null;
 	}
 

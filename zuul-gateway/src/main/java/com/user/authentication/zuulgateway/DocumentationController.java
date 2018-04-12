@@ -27,7 +27,8 @@ public class DocumentationController  implements SwaggerResourcesProvider  {
         return resources;
     }
     
-    private SwaggerResource swaggerResource(String name, String location, String version) {
+    private SwaggerResource swaggerResource(String name, String location, String version) 
+    {
         SwaggerResource swaggerResource = new SwaggerResource();
         swaggerResource.setName(name);
         swaggerResource.setLocation(location);
